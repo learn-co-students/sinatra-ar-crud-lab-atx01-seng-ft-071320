@@ -18,3 +18,5 @@ group :development do
   gem 'sqlite3', '~> 1.3.6'
   gem "shotgun"
 end
+
+gem "learn-co", "~> 4.0"
