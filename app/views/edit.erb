@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create an Article</title>
+  </head>
+
+  <body>
+    <h1>Edit Article</h1>
+    <form method="POST" action="/articles/<%= @article.id %>">
+      <input type="hidden" name="_method" value="patch">
+        <label for="title">Article Title</label>
+        <input id="title" type="text" name="article[title]" value="<%= @article.title %>"/>
+        <br>
+        <label for="content">Content</label>
+        <br>
+        <textarea id="content" type="text" name="article[content]" value="<%= @article.content %>"></textarea>
+        <br>
+      <input type="submit"/>
+    </form>
+    <br>
+    <br>
+    <br>
+    <a href="/">Home</a>
+  </body>
+</html>
